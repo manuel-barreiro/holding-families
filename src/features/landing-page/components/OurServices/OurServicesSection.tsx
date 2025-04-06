@@ -6,28 +6,44 @@ const services = [
   {
     title: 'HOLD ONE-ON-ONE',
     subtitle: 'Personalized Parent Coaching',
-    description: 'A private space where we hold you with empathy and evidence-based tools, helping you navigate challenges with clarity and confidence — from tantrums to tough talks.',
+    description: (
+      <>
+        A private space where we hold you with <span className='font-bold'>empathy and evidence-based tools</span>, helping you navigate challenges with <span className='font-bold'>clarity and confidence</span> — from tantrums to tough talks.
+      </>
+    ),
     buttonLink: '/services/one-on-one',
     imageUrl: '/images/services/1.jpg'
   },
   {
     title: 'HOLD TOGETHER',
     subtitle: 'Group Coaching for Parents',
-    description: "Connect with other parents in a supportive environment. Guided by a coach, you'll learn, share, and grow together — because you're not meant to do this alone.",
+    description: (
+      <>
+        Connect with other parents in a <span className='font-bold'>supportive environment</span>. Guided by a coach, you'll learn, share, and grow together — because you're <span className='font-bold'>not meant to do this alone</span>.
+      </>
+    ),
     buttonLink: '/services/group-coaching',
     imageUrl: '/images/services/2.jpg'
   },
   {
     title: 'HOLD FROM THE START',
     subtitle: "Coaching for Expecting Parents & Baby's First Year",
-    description: "From pregnancy to postpartum, we support you in building secure bonds and healthy routines from day one. Calm begins with you — and we're here to guide the way.",
+    description: (
+      <>
+        From pregnancy to postpartum, we support you in building <span className='font-bold'>secure bonds and healthy routines</span> from day one. <span className='font-bold'>Calm begins with you</span> — and we're here to guide the way.
+      </>
+    ),
     buttonLink: '/services/expecting-parents',
     imageUrl: '/images/services/3.jpg'
   },
   {
     title: 'HOLD WITH AI',
     subtitle: 'Coaching Powered by ParenteAI',
-    description: "We've partnered with ParenteAI to offer a hybrid model of support that combines 24/7 AI guidance with the power of live coaching.",
+    description: (
+      <>
+        We've partnered with ParenteAI to offer a <span className='font-bold'>hybrid model of support</span> that combines <span className='font-bold'>24/7 AI guidance with the power of live coaching</span>.
+      </>
+    ),
     buttonLink: '/services/ai-coaching',
     imageUrl: '/images/services/4.jpg',
     extraContent: '+ Keep Reading'
@@ -35,7 +51,11 @@ const services = [
   {
     title: 'HOLD THE FUTURE',
     subtitle: 'Teen Prevention & Positive Behavior Programs',
-    description: 'Empower your child early. This program equips parents to prevent behavioral issues and build lasting emotional resilience.',
+    description: (
+      <>
+        <span className='font-bold'>Empower your child early</span>. This program equips parents to prevent behavioral issues and build <span className='font-bold'>lasting emotional resilience</span>.
+      </>
+    ),
     buttonLink: '/services/teen-programs',
     imageUrl: '/images/services/5.jpg'
   }
