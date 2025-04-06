@@ -1,18 +1,40 @@
 import type { Metadata, Viewport } from 'next'
-import { Poppins } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const poppins = Poppins({
-  variable: '--font-poppins',
-  weight: ['300', '400', '500', '600', '700'],
-  subsets: ['latin']
+const standerd = localFont(
+  {
+    src: '../fonts/StanderdVF.ttf',
+    variable: '--font-standerd'
+  }
+)
+
+const ivy = localFont({
+  src: [
+    {
+      path: '../fonts/IvyMode-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../fonts/IvyMode-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../fonts/IvyMode-Thin.ttf',
+      weight: '100',
+      style: 'normal'
+    }
+  ],
+  variable: '--font-ivy'
 })
 
 export const metadata: Metadata = {
-  title: 'Clic Pilates',
+  title: 'Holding Families',
   description:
-    'Hace el clic y transforma tu vida con Clic Pilates. Descubre la mejor experiencia de pilates en Buenos Aires. ¡Únete a nosotros hoy mismo!',
+    'Support That Holds Your Parenting Together. Empowering families with care & intelligence.',
   metadataBase: new URL('https://clic-landing.vercel.app/'),
   alternates: {
     canonical: '/'
@@ -77,7 +99,7 @@ export default function RootLayout ({
         <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
       </head>
       <body
-        className={`${poppins.variable} antialiased font-poppins bg-background`}
+        className={`${standerd.variable} ${ivy.variable} antialiased font-standerd bg-background`}
       >
         {children}
         <Toaster position='top-center' />

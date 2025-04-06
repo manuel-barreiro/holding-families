@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { Button } from '@/components/ui/button'
 
 export default function Hero (): React.JSX.Element {
   const sectionRef = useRef(null)
@@ -31,7 +32,7 @@ export default function Hero (): React.JSX.Element {
           <Image
             alt='CLIC Pilates Studio'
             title='Pilates Studio'
-            src='/images/1HOME.webp'
+            src='/images/hero.jpg'
             fill
             priority
             quality={100}
@@ -41,45 +42,40 @@ export default function Hero (): React.JSX.Element {
           />
 
           {/* Black overlay for better text visibility */}
-          <div className='absolute inset-0 bg-black/50' />
+          <div className='absolute inset-0 bg-black/10' />
         </div>
       </motion.div>
 
       {/* Content container - centered for all screen sizes */}
       <div className='absolute inset-0 flex h-full w-full flex-col items-center justify-center px-6 sm:px-10'>
-        <div className='flex flex-col items-center text-center max-w-3xl gap-6'>
+        <div className='flex flex-col items-center text-center max-w-6xl gap-6'>
           {/* Main heading with smoother animation */}
           <h1
-            className={`text-4xl font-semibold text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
+            className={`text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-300 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            Bienvenida a tu<br />Pilates Era
+            Support That Holds Your Parenting Together
           </h1>
 
-          {/* Tu Nueva Era text - responsive width based on screen size */}
-          <Image
-            src='/images/tu_nueva_era.png'
-            alt='Tu Nueva Era'
-            width={300}
-            height={50}
-            quality={100}
-            className={`w-[200px] sm:w-[220px] md:w-[250px] lg:w-[280px] xl:w-[300px] ${
+          {/* Subheading with smoother animation */}
+          <h2
+            className={`text-lg text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-500 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
-          />
+          >
+            Empowering families with care & intelligence.
+          </h2>
 
-          {/* Down arrow - responsive width based on screen size */}
-          <Image
-            src='/images/hero_arrow.png'
-            alt='Scroll down'
-            width={60}
-            height={60}
-            quality={100}
-            className={`w-[40px] sm:w-[45px] md:w-[50px] lg:w-[55px] xl:w-[60px] ${
-              isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-1000 animate-once animate-ease-in-out' : 'opacity-0'
+          {/* Button with smoother animation */}
+          <Button
+            className={`text-[#B2AC9D] font-bold text-lg sm:text-xl md:text-2xl bg-white hover:bg-white/80 px-8 sm:px-12 md:px-20 py-4 sm:py-6 md:py-8 rounded-full ${
+              isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-700 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
-          />
+          >
+            JOIN SMART PARENTING
+          </Button>
+
         </div>
       </div>
     </section>

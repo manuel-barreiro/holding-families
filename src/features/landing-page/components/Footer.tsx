@@ -37,14 +37,14 @@ export default function ClicFooter (): React.ReactElement {
         {/* logo */}
         <div className='relative flex flex-col gap-0 justify-center items-center order-1 md:order-2'>
           <Link href='/#home'>
-          <Image
-            src='/icons/logo_footer.svg'
-            alt='CLIC studio pilates'
-            width={200}
-            height={50}
-            className='mb-2'
-            priority
-          />
+            <Image
+              src='/icons/logo_footer.svg'
+              alt='CLIC studio pilates'
+              width={200}
+              height={50}
+              className='mb-2'
+              priority
+            />
           </Link>
 
         </div>
@@ -133,7 +133,7 @@ export default function ClicFooter (): React.ReactElement {
         </p>
 
         <div className='flex items-center'>
-          <a href='https://www.instagram.com/cs__creativestudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' className='text-xs sm:text-sm transition-opacity hover:opacity-80 hover:underline'>
+          <a href='https://www.instagram.com/cs__creativestudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' className='text-xs sm:text-sm transition-opacity hover:opacity-80 hover:underline' rel='noreferrer'>
             DESIGNED BY CS CREATIVE STUDIO
           </a>
         </div>

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @plugin "tailwindcss-animate";
 @import "tailwindcss-animated";
 
@@ -8,7 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-poppins: var(--font-poppins);
+  --font-standerd: var(--font-standerd);
+  --font-ivy: var(--font-ivy);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -62,39 +62,39 @@
 }
 
 :root {
-  /* CLIC Pilates Theme Colors */
-  --cream: oklch(94.25% 0.0068 97.35);  /* #EDECE7 */
-  --nude: oklch(75.41% 0.027 63.62);   /* #BCAC9E */
-  --dark-text: oklch(0.145 0 0);       /* Near black for text */
-  --light-text: oklch(0.985 0 0);      /* Near white for text on dark backgrounds */
+  /* Holding Families Theme Colors */
+  --cream: oklch(0.94 0.0213 85.94);  /* #F2EBDC */
+  --dark-green: oklch(0.39 0.0438 125.49);   /* #3E482E */
+  --dark-text: oklch(0.3 0.0159 58.97);       /* Near black for text */
+  --light-text: oklch(0.94 0.0213 85.94);      /* Near white for text on dark backgrounds */
   
-  /* Base theme setup using CLIC Pilates colors */
+  /* Base theme setup using Holding Families colors */
   --background: var(--cream);
   --foreground: var(--dark-text);
   --card: var(--cream);
   --card-foreground: var(--dark-text);
   --popover: var(--cream);
   --popover-foreground: var(--dark-text);
-  --primary: var(--nude);
+  --primary: var(--dark-green);
   --primary-foreground: var(--light-text);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: var(--dark-text);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: var(--nude);
+  --accent: var(--dark-green);
   --accent-foreground: var(--light-text);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: var(--nude);
-  --chart-1: var(--nude);
+  --ring: var(--dark-green);
+  --chart-1: var(--dark-green);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  --sidebar: var(--nude);
+  --sidebar: var(--dark-green);
   --sidebar-foreground: var(--light-text);
   --sidebar-primary: var(--dark-text);
   --sidebar-primary-foreground: var(--cream);
@@ -117,19 +117,19 @@
   --secondary-foreground: var(--cream);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: var(--nude);
+  --accent: var(--dark-green);
   --accent-foreground: var(--cream);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
-  --ring: var(--nude);
-  --chart-1: var(--nude);
+  --ring: var(--dark-green);
+  --chart-1: var(--dark-green);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: var(--nude);
+  --sidebar: var(--dark-green);
   --sidebar-foreground: var(--cream);
   --sidebar-primary: var(--cream);
   --sidebar-primary-foreground: var(--dark-text);
@@ -148,21 +148,21 @@
   }
 }
 
-/* Additional custom classes for CLIC Pilates */
+/* Additional custom classes for Holding Families */
 .bg-cream {
   background-color: var(--cream);
 }
 
-.bg-nude {
-  background-color: var(--nude);
+.bg-dark-green {
+  background-color: var(--dark-green);
 }
 
 .text-cream {
   color: var(--cream);
 }
 
-.text-nude {
-  color: var(--nude);
+.text-dark-green {
+  color: var(--dark-green);
 }
 
 /* Fix marquee animations */
