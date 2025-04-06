@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   title: 'Holding Families',
   description:
     'Support That Holds Your Parenting Together. Empowering families with care & intelligence.',
-  metadataBase: new URL('https://clic-landing.vercel.app/'),
+  metadataBase: new URL('https://holding-families.vercel.app/'),
   alternates: {
     canonical: '/'
   },
@@ -67,22 +67,24 @@ export const metadata: Metadata = {
     }
   },
   keywords: [
-    'pilates',
-    'reformer',
-    'wellness',
-    'yoga',
-    'meditación',
-    'buenos aires',
-    'argentina'
+    'parenting',
+    'support',
+    'families',
+    'emotional management',
+    'AI-powered solutions',
+    'evidence-based strategies',
+    'behavioral challenges',
+    'communication',
+    'connected home environment'
   ],
-  authors: [{ name: 'Clic Pilates' }],
+  authors: [{ name: 'Holding Families' }],
   verification: {
     google: 'your-google-verification-code' // Add your Google Search Console verification code
   }
 }
 
 export const viewport: Viewport = {
-  themeColor: '#edece7',
+  themeColor: '#3E482E',
   initialScale: 1,
   maximumScale: 1,
   width: 'device-width'
