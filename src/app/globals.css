@@ -5,6 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* Holding Families Theme Colors */
+  --color-cream: oklch(0.94 0.0213 85.94);  /* #F2EBDC */
+  --color-dark-green: oklch(0.39 0.0438 125.49);   /* #3E482E */
+  --color-dark-text: oklch(0.3 0.0159 58.97);       /* Near black for text */
+  --color-light-text: oklch(0.94 0.0213 85.94);      /* Near white for text on dark backgrounds */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-standerd: var(--font-standerd);

@@ -6,6 +6,7 @@ import NavBar from '@/features/landing-page/components/NavBar/NavBar'
 import Hero from '@/features/landing-page/components/Hero'
 import Mission from '@/features/landing-page/components/Mission'
 import OurBrand from '@/features/landing-page/components/OurBrand'
+import OurServicesSection from './components/OurServices/OurServicesSection'
 
 export default function LandingPage (): React.JSX.Element {
   // Lenis smooth scroll
@@ -36,6 +37,7 @@ export default function LandingPage (): React.JSX.Element {
         <Hero />
         <Mission />
         <OurBrand />
+        <OurServicesSection />
 
         {/* Add more sections here */}
 
