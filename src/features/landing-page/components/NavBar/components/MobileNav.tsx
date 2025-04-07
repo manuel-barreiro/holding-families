@@ -111,7 +111,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               onClick={() => setOpen(false)}
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
-              <Link href='/science-backed' className='flex items-center gap-2'>
+              <Link href='/#science-backed' className='flex items-center gap-2'>
                 <span>SCIENCE-BACKED</span>
                 <span className='mb-1'>{'>'}</span>
               </Link>
