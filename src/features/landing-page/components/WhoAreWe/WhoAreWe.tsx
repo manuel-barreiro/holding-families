@@ -18,7 +18,7 @@ export default function WhoAreWe (): React.JSX.Element {
     <section
       ref={sectionRef}
       id='who-are-we'
-      className='relative min-h-screen overflow-hidden w-full bg-[#5C3423] py-16 md:py-24'
+      className='relative min-h-screen overflow-hidden w-full bg-[#5C3423] py-16 md:pb-36 md:pt-24'
     >
       <motion.div className='absolute h-full w-full top-0 left-0' style={{ top: y }}>
         {/* Image wrapper */}
@@ -40,7 +40,7 @@ export default function WhoAreWe (): React.JSX.Element {
       </motion.div>
 
       {/* Content container - adjusted padding and spacing */}
-      <div className='relative z-10 flex h-full w-full flex-col items-center justify-start px-4 sm:px-10 gap-8 md:gap-16'>
+      <div className='relative z-10 flex h-full w-full flex-col items-center justify-start px-4 sm:px-10 gap-8'>
         <h5 className='text-[#F2EBDC] font-ivy tracking-widest text-center text-2xl md:text-3xl pt-8 md:pt-0'>
           BEHIND <br /> HOLDING FAMILIES
         </h5>
