@@ -41,7 +41,7 @@ export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.
         </li>
 
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#SCIENCE-BACKED'>SCIENCE-BACKED</Link>
+          <Link href='/#science-backed'>SCIENCE-BACKED</Link>
         </li>
 
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>

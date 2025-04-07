@@ -6,7 +6,7 @@ import ExpertPresentation from '@/features/landing-page/components/ScienceBacked
 
 const ScienceBacked: React.FC = () => {
   return (
-    <section className='py-16 md:py-24 px-4 bg-cream text-[#332B25]'>
+    <section id='science-backed' className='py-16 md:py-24 px-4 bg-cream text-[#332B25]'>
       <div className='max-w-6xl mx-auto'>
         <motion.div
           className='text-center mb-16'

@@ -10,6 +10,7 @@ import OurServicesSection from '@/features/landing-page/components/OurServices/O
 import WhoAreWe from '@/features/landing-page/components/WhoAreWe/WhoAreWe'
 import Footer from '@/features/landing-page/components/Footer'
 import ScienceBacked from '@/features/landing-page/components/ScienceBacked/ScienceBacked'
+import Contact from '@/features/landing-page/components/Contact/Contact'
 
 export default function LandingPage (): React.JSX.Element {
   // Lenis smooth scroll
@@ -43,6 +44,7 @@ export default function LandingPage (): React.JSX.Element {
         <OurServicesSection />
         <WhoAreWe />
         <ScienceBacked />
+        <Contact />
         <Footer />
       </main>
 
