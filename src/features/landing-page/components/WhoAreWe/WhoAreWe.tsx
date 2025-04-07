@@ -18,9 +18,9 @@ export default function WhoAreWe (): React.JSX.Element {
     <section
       ref={sectionRef}
       id='home'
-      className='relative min-h-screen h-auto w-full overflow-hidden'
+      className='relative min-h-screen w-full bg-[#5C3423] py-16 md:py-24'
     >
-      <motion.div className='absolute h-[110%] w-full' style={{ top: y }}>
+      <motion.div className='absolute h-full w-full top-0 left-0' style={{ top: y }}>
         {/* Image wrapper */}
         <div className='relative h-full w-full'>
           <Image
@@ -39,23 +39,24 @@ export default function WhoAreWe (): React.JSX.Element {
         </div>
       </motion.div>
 
-      {/* Content container - centered for all screen sizes */}
-      <div className='absolute inset-0 flex gap-16 h-full w-full flex-col items-center justify-start px-10 py-16'>
+      {/* Content container - adjusted padding and spacing */}
+      <div className='relative z-10 flex h-full w-full flex-col items-center justify-start px-4 sm:px-10 gap-8 md:gap-16'>
+        <h5 className='text-[#F2EBDC] font-ivy tracking-widest text-center text-2xl md:text-3xl pt-8 md:pt-0'>
+          BEHIND <br /> HOLDING FAMILIES
+        </h5>
 
-        <h5 className='text-[#F2EBDC] font-ivy tracking-widest text-center text-3xl'>BEHIND <br /> HOLDING FAMILIES</h5>
-
-        <div className='flex flex-col md:flex-row items-center justify-evenly w-full'>
+        <div className='flex flex-col md:flex-row items-stretch justify-evenly w-full gap-16 md:gap-8'>
           {whoAreWeData.map((person, index) => (
-            <WhoAreWeCard
-              key={index}
-              imageUrl={person.imageUrl}
-              name={person.name}
-              description={person.description}
-              education={person.education}
-            />
+            <div key={index} className='flex-1 flex justify-center'>
+              <WhoAreWeCard
+                imageUrl={person.imageUrl}
+                name={person.name}
+                description={person.description}
+                education={person.education}
+              />
+            </div>
           ))}
         </div>
-
       </div>
 
     </section>
