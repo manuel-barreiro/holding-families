@@ -64,7 +64,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-500 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            Empowering families with care & intelligence.
+            We hold you to hold your child - with heart, mind & AI
           </h2>
 
           {/* Button with smoother animation */}
@@ -73,7 +73,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-700 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            JOIN SMART PARENTING
+            JOIN STRATEGIC PARENTING
           </Button>
 
         </div>

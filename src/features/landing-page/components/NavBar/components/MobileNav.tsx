@@ -112,7 +112,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#academy' className='flex items-center gap-2'>
-                <span>BENEFITS</span>
+                <span>SCIENCE-BACKED</span>
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>

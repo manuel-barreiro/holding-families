@@ -1,11 +1,10 @@
 import React, { JSX } from 'react'
-import Link from 'next/link'
 
 interface ServiceCardProps {
   title: string
   subtitle: string
   description: string | JSX.Element
-  buttonLink: string
+  buttonLink?: string
   imageUrl: string
   extraContent?: string | JSX.Element
 }
@@ -14,7 +13,7 @@ export default function ServiceCard ({
   title,
   subtitle,
   description,
-  buttonLink,
+  buttonLink = 'https://www.parente.ai/',
   imageUrl,
   extraContent
 }: ServiceCardProps): JSX.Element {
@@ -59,12 +58,13 @@ export default function ServiceCard ({
 
       {/* Button - Absolutely positioned */}
       <div className='absolute bottom-0 left-0 right-0 transform translate-y-1/2 flex justify-center'>
-        <Link
+        <a
           href={buttonLink}
-          className='inline-block rounded-full bg-[#626752] px-8 py-4 text-center text-cream hover:bg-opacity-90 hover:shadow-2xl text-xl font-semibold transition-all ease-in-out duration-300'
+          target='_blank'
+          className='inline-block rounded-full bg-[#626752] hover:bg-[#71775d] px-8 py-4 text-center text-cream hover:shadow-2xl text-xl font-semibold transition-all ease-in-out duration-300' rel='noreferrer'
         >
           Shop Now
-        </Link>
+        </a>
       </div>
     </div>
   )

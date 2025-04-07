@@ -26,6 +26,11 @@ const ivy = localFont({
       path: '../fonts/IvyMode-Thin.ttf',
       weight: '100',
       style: 'normal'
+    },
+    {
+      path: '../fonts/IvyMode-Italic.ttf',
+      weight: '400',
+      style: 'italic'
     }
   ],
   variable: '--font-ivy'
