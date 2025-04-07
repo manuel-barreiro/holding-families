@@ -6,8 +6,9 @@ import NavBar from '@/features/landing-page/components/NavBar/NavBar'
 import Hero from '@/features/landing-page/components/Hero'
 import Mission from '@/features/landing-page/components/Mission'
 import OurBrand from '@/features/landing-page/components/OurBrand'
-import OurServicesSection from './components/OurServices/OurServicesSection'
-import WhoAreWe from './components/WhoAreWe/WhoAreWe'
+import OurServicesSection from '@/features/landing-page/components/OurServices/OurServicesSection'
+import WhoAreWe from '@/features/landing-page/components/WhoAreWe/WhoAreWe'
+import Footer from '@/features/landing-page/components/Footer'
 
 export default function LandingPage (): React.JSX.Element {
   // Lenis smooth scroll
@@ -40,7 +41,7 @@ export default function LandingPage (): React.JSX.Element {
         <OurBrand />
         <OurServicesSection />
         <WhoAreWe />
-
+        <Footer />
       </main>
 
     </>

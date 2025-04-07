@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Mission (): JSX.Element {
   return (
-    <section className='sm:min-h-[75vh] min-h-[50vh] w-full flex flex-col items-center justify-center relative overflow-hidden p-4 md:p-6'>
+    <section id='mission' className='sm:min-h-[75vh] min-h-[50vh] w-full flex flex-col items-center justify-center relative overflow-hidden p-4 md:p-6'>
       {/* Pattern in background */}
       <div className='absolute inset-0 flex items-center justify-center'>
         <Image

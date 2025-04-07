@@ -13,13 +13,13 @@ export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.
     >
       <ul className='animate-fade-down animate-normal animate-duration-[3000ms] animate-fill-both animate-once mt-2 flex gap-6 transition'>
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#brand'>MISSION</Link>
+          <Link href='/#mission'>MISSION</Link>
         </li>
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#quienes-somos'>OUR BRAND</Link>
+          <Link href='/#brand'>OUR BRAND</Link>
         </li>
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#niveles'>SERVICES</Link>
+          <Link href='/#services'>SERVICES</Link>
         </li>
       </ul>
 
@@ -37,15 +37,15 @@ export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.
       <ul className='animate-fade-down animate-normal animate-duration-[3000ms] animate-fill-both animate-once mt-2 flex gap-6 transition'>
 
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#franquicias'>WHO ARE WE</Link>
+          <Link href='/#who-are-we'>WHO ARE WE</Link>
         </li>
 
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#academy'>SCIENCE-BACKED</Link>
+          <Link href='/#SCIENCE-BACKED'>SCIENCE-BACKED</Link>
         </li>
 
         <li className='underline-offset-8 transition-all duration-300 ease-in-out hover:scale-105 hover:text-white hover:underline hover:brightness-200'>
-          <Link href='/#contacto'>CONTACT</Link>
+          <Link href='/#contact'>CONTACT</Link>
         </li>
       </ul>
     </nav>

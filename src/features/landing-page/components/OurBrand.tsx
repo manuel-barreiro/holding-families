@@ -2,7 +2,7 @@ import React, { JSX } from 'react'
 
 export default function OurBrand (): JSX.Element {
   return (
-    <section className='min-h-screen w-full py-16 px-10 md:px-16'>
+    <section id='brand' className='min-h-screen w-full py-16 px-10 md:px-16'>
       <div className='max-w-6xl mx-auto'>
         <div className='flex flex-col md:flex-row md:gap-12'>
           {/* Heading column - takes full width on mobile, 1/3 on desktop */}
