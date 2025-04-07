@@ -18,7 +18,7 @@ export default function WhoAreWe (): React.JSX.Element {
     <section
       ref={sectionRef}
       id='home'
-      className='relative min-h-screen w-full bg-[#5C3423] py-16 md:py-24'
+      className='relative min-h-screen overflow-hidden w-full bg-[#5C3423] py-16 md:py-24'
     >
       <motion.div className='absolute h-full w-full top-0 left-0' style={{ top: y }}>
         {/* Image wrapper */}
