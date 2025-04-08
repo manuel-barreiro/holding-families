@@ -2,19 +2,19 @@ import React, { JSX } from 'react'
 
 export default function OurBrand (): JSX.Element {
   return (
-    <section id='brand' className='min-h-screen w-full py-16 px-10 md:px-16'>
+    <section id='brand' className='h-auto w-full py-16 px-10 md:px-16'>
       <div className='max-w-6xl mx-auto'>
         <div className='flex flex-col md:flex-row md:gap-12'>
           {/* Heading column - takes full width on mobile, 1/3 on desktop */}
           <div className='mb-8 md:mb-0 md:w-1/2'>
-            <h4 className='text-2xl md:text-3xl font-semibold text-[#3D482E] tracking-wide font-ivy'>
+            <h4 className='text-2xl sm:text-3xl md:text-4xl font-semibold text-[#3D482E] tracking-wide font-ivy'>
               MEET HOLDING FAMILIES
             </h4>
           </div>
 
           {/* Content column - takes full width on mobile, 2/3 on desktop */}
-          <div className='md:w-1/2 text-[#7C6F64] space-y-6 font-medium text-justify'>
-            <p className='text-lg leading-tight'>
+          <div className='md:w-1/2 text-[#7C6F64] space-y-6 font-medium text-justify text-lg sm:text-xl leading-tight'>
+            <p>
               We are dedicated to transform parenting by combining
               <span className='font-bold '> science, technology, and human warmth & expertise.
                 We provide comprehensive support for parents
@@ -22,14 +22,14 @@ export default function OurBrand (): JSX.Element {
               expert coaching and guidance <span className='font-bold '>to navigate the challenges of raising children.</span>
             </p>
 
-            <p className='text-lg leading-tight'>
+            <p>
               Our goal is to <span className='font-bold '>make parenting more strategic, less stressful, and more empowering </span>—strengthening family
               bonds and fostering emotional well-being from early
               childhood through the teenage years.
             </p>
 
-            <p className='text-lg leading-tight'>
-              Our of our main programs is <span className='font-bold '>Parente.AI, an AI-powered solution</span> designed to help parents of children aged 2 to 12
+            <p>
+              One of our main programs is <span className='font-bold '>Parente.AI, an AI-powered solution</span> designed to help parents of children aged 2 to 12
               <span className='font-bold '> manage behavioral challenges, enhance
                 communication, and create a balanced
               </span>, connected

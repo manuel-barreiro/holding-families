@@ -7,6 +7,7 @@ interface ServiceCardProps {
   buttonLink?: string
   imageUrl: string
   extraContent?: string | JSX.Element
+  imageClassname?: string
 }
 
 export default function ServiceCard ({
@@ -15,16 +16,18 @@ export default function ServiceCard ({
   description,
   buttonLink = 'https://www.parente.ai/',
   imageUrl,
+  imageClassname, // Default value properly defined
   extraContent
 }: ServiceCardProps): JSX.Element {
+  console.log('Received imageClassname:', imageClassname)
   return (
     <div className='flex flex-col h-full rounded-4xl bg-[#DFD9C5] w-full relative pb-10'>
       {/* Image */}
-      <div className='h-36 overflow-hidden'>
+      <div className='h-44 overflow-hidden'>
         <img
           src={imageUrl}
           alt={title}
-          className='h-full w-full object-cover rounded-t-4xl'
+          className={`h-full w-full object-cover ${imageClassname ?? ''} rounded-t-4xl`}
         />
       </div>
 
