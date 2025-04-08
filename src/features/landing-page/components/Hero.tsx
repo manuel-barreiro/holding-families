@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRef, useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function Hero (): React.JSX.Element {
   const sectionRef = useRef(null)
@@ -68,13 +69,15 @@ export default function Hero (): React.JSX.Element {
           </h2>
 
           {/* Button with smoother animation */}
-          <Button
-            className={`text-[#B2AC9D] font-bold text-sm sm:text-xl bg-white hover:bg-white/80 px-8 sm:px-12 md:px-20 py-4 sm:py-6 md:py-8 rounded-full cursor-pointer ${
+          <Link href='/#services'>
+            <Button
+              className={`text-[#B2AC9D] font-bold text-sm sm:text-xl bg-white hover:bg-white/80 px-8 sm:px-12 md:px-20 py-4 sm:py-6 md:py-8 rounded-full cursor-pointer ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-700 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
-          >
-            JOIN STRATEGIC PARENTING
-          </Button>
+            >
+              JOIN STRATEGIC PARENTING
+            </Button>
+          </Link>
 
         </div>
       </div>
