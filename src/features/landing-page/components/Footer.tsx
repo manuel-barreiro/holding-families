@@ -38,7 +38,7 @@ export default function Footer (): React.ReactElement {
         <div className='relative flex flex-col gap-0 justify-center items-center order-1 md:order-2'>
           <Link href='/#home'>
             <Image
-              src='/icons/logo_footer.png'
+              src='/icons/logo_footer.svg'
               alt='CLIC studio pilates'
               width={200}
               height={50}

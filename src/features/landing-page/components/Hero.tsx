@@ -55,7 +55,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-300 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            Support That Holds Your Parenting Together
+            Empowering Parents
           </h1>
 
           {/* Subheading with smoother animation */}

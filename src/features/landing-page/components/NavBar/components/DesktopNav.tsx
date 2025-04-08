@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.ReactElement {
   return (
     <nav className={cn(
-      'fixed left-0 right-0 top-0 z-50 hidden  justify-between items-center  px-20 py-6 font-normal text-background transition-all duration-300 ease-in-out xl:flex text-lg',
+      'fixed left-0 right-0 top-0 z-50 hidden  justify-between items-center  px-20 py-6 font-normal text-background transition-all duration-300 ease-in-out xl:flex text-base',
       scrolled
         ? 'backdrop-blur-md bg-accent/80 shadow-lg'
         : 'bg-transparent'
@@ -25,12 +25,12 @@ export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.
 
       <Link href='/#home'>
         <Image
-          src='/icons/logo_hf.png'
+          src='/icons/logo_hf.svg'
           priority
-          width={300}
+          width={350}
           height={100}
           alt='Clic Pilates Logo'
-          className='animate-fade animate-normal animate-duration-[3000ms] animate-fill-both animate-once ease-in-out'
+          className='animate-fade animate-normal animate-duration-[3000ms] animate-fill-both animate-once ease-in-out mt-2 pl-10!'
         />
       </Link>
 
