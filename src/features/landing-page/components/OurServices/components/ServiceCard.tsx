@@ -63,7 +63,7 @@ export default function ServiceCard ({
       <div className='absolute bottom-0 left-0 right-0 transform translate-y-1/2 flex justify-center'>
         <a
           href='/#contact'
-          target='_blank'
+          // target='_blank'
           className='inline-block rounded-full bg-[#626752] hover:bg-[#71775d] px-8 py-4 text-center text-cream hover:shadow-2xl text-xl font-semibold transition-all ease-in-out duration-300' rel='noreferrer'
         >
           Shop Now
