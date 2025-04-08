@@ -16,7 +16,7 @@ export default function WhoAreWeCard ({ imageUrl, name, description, education }
         width={100}
         height={100}
         alt={name}
-        className='rounded-full aspect-square absolute -top-10 left-1/2 -translate-x-1/2 border-4 border-[#5C3423]'
+        className='rounded-full aspect-square absolute -top-10 left-1/2 -translate-x-1/2'
       />
 
       <p className='font-semibold mt-10 text-center text-xl md:text-2xl'>{name}</p>

@@ -41,11 +41,11 @@ export default function WhoAreWe (): React.JSX.Element {
 
       {/* Content container - adjusted padding and spacing */}
       <div className='relative z-10 flex h-full w-full flex-col items-center justify-start px-4 sm:px-10 gap-8'>
-        <h5 className='text-[#F2EBDC] font-ivy tracking-widest text-center text-2xl md:text-3xl pt-8 md:pt-0'>
+        <h5 className='text-cream font-ivy tracking-widest text-center text-2xl sm:text-3xl md:text-4xl font-semibold pt-8 md:pt-0'>
           BEHIND <br /> HOLDING FAMILIES
         </h5>
 
-        <div className='flex flex-col md:flex-row items-stretch justify-evenly w-full gap-16 md:gap-8'>
+        <div className='flex flex-col md:flex-row items-stretch justify-evenly w-full gap-8 md:gap-0'>
           {whoAreWeData.map((person, index) => (
             <div key={index} className='flex-1 flex justify-center'>
               <WhoAreWeCard
