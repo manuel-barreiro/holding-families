@@ -77,8 +77,8 @@ export default function ContactForm (): React.JSX.Element {
             <CheckIcon className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>Recibimos tu consulta</p>
-            <p className='text-sm text-muted-foreground'>Te contactaremos a la brevedad</p>
+            <p className='font-medium'>We've received your inquiry</p>
+            <p className='text-sm text-muted-foreground'>We will contact you shortly</p>
           </div>
         </div>
       )
@@ -94,8 +94,8 @@ export default function ContactForm (): React.JSX.Element {
             <X className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>Ocurrió un error</p>
-            <p className='text-sm text-muted-foreground'>No recibimos tu consulta </p>
+            <p className='font-medium'>An error occurred</p>
+            <p className='text-sm text-muted-foreground'>We did not receive your inquiry</p>
           </div>
         </div>
       )
