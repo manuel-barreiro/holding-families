@@ -24,7 +24,7 @@ export default function WhoAreWe (): React.JSX.Element {
         {/* Image wrapper */}
         <div className='relative h-full w-full'>
           <Image
-            alt='CLIC Pilates Studio'
+            alt='Holding Families'
             title='Pilates Studio'
             src='/images/mountain_bg.jpg'
             fill

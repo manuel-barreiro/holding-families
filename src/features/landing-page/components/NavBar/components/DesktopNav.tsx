@@ -29,7 +29,7 @@ export default function DesktopNav ({ scrolled }: { scrolled: boolean }): React.
           priority
           width={350}
           height={100}
-          alt='Clic Pilates Logo'
+          alt='Holding Families Logo'
           className='animate-fade animate-normal animate-duration-[3000ms] animate-fill-both animate-once ease-in-out mt-2 pl-10!'
         />
       </Link>

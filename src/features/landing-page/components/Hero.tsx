@@ -31,8 +31,8 @@ export default function Hero (): React.JSX.Element {
         {/* Image wrapper */}
         <div className='relative h-full w-full'>
           <Image
-            alt='CLIC Pilates Studio'
-            title='Pilates Studio'
+            alt='Holding Families'
+            title='Holding Families'
             src='/images/hero.jpg'
             fill
             priority

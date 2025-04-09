@@ -39,7 +39,7 @@ export default function Footer (): React.ReactElement {
           <Link href='/#home'>
             <Image
               src='/icons/logo_footer.svg'
-              alt='CLIC studio pilates'
+              alt='Holding Families Logo'
               width={200}
               height={50}
               className='mb-2'
