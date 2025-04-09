@@ -19,7 +19,7 @@ export async function POST (request: Request): Promise<NextResponse> {
     const { name, lastName, email, phone, message } = formData
 
     const data = await resend.emails.send({
-      from: 'Holding Families <contact@holding-families.com>', // You can change this to your verified domain
+      from: 'Holding Families <contact@holding-families.com>',
       to: ['contact@holding-families.com'],
       subject: 'Nueva solicitud de franquicia',
       html: `

@@ -19,7 +19,6 @@ export default function ServiceCard ({
   imageClassname, // Default value properly defined
   extraContent
 }: ServiceCardProps): JSX.Element {
-  console.log('Received imageClassname:', imageClassname)
   return (
     <div className='flex flex-col h-full rounded-4xl bg-[#DFD9C5] w-full relative pb-10'>
       {/* Image */}
