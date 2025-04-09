@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 interface FormData {
   name: string
   lastName: string
-  email: number
+  email: string
   phone: string
   message: string
 }
