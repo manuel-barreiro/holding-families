@@ -21,7 +21,7 @@ export async function POST (request: Request): Promise<NextResponse> {
     const data = await resend.emails.send({
       from: 'Holding Families Contact <contact@holding-families.com>',
       // to: ['contact@holding-families.com'],
-      to: ['ing.mbarreiro@gmail.com'],
+      to: ['contact@holding-families.com'],
       subject: 'New Message Received',
       html: `
         <h2>Nueva solicitud de franquicia</h2>
