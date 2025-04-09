@@ -33,7 +33,7 @@ import { TextShimmerWave } from '@/components/motion-primitives/text-shimmer-wav
 
 const formSchema = z.object({
   name: z.string().min(1, 'Please enter your name').max(35),
-  last_name: z.string().min(1, 'Please enter your last name').max(55),
+  lastName: z.string().min(1, 'Please enter your last name').max(55),
   email: z.string().email('Please enter a valid email'),
   phone: z.string().min(1, 'Phone number is required'),
   message: z.string().min(1, 'Message is required').max(500)
@@ -46,7 +46,7 @@ export default function ContactForm (): React.JSX.Element {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
-      last_name: '',
+      lastName: '',
       email: '',
       phone: '',
       message: ''
@@ -132,7 +132,7 @@ export default function ContactForm (): React.JSX.Element {
           <div className='col-span-1'>
             <FormField
               control={form.control}
-              name='last_name'
+              name='lastName'
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className='sr-only'>Last Name</FormLabel>

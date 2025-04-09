@@ -45,7 +45,7 @@ export default function WhoAreWe (): React.JSX.Element {
           BEHIND <br /> HOLDING FAMILIES
         </h5>
 
-        <div className='flex flex-col md:flex-row items-stretch justify-evenly w-full gap-8 md:gap-0'>
+        <div className='flex flex-col lg:flex-row items-stretch justify-evenly w-full gap-8 lg:gap-5'>
           {whoAreWeData.map((person, index) => (
             <div key={index} className='flex-1 flex justify-center'>
               <WhoAreWeCard

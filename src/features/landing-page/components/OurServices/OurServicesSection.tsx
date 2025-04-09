@@ -5,8 +5,8 @@ import { services } from '@/features/landing-page/components/OurServices/constan
 
 export default function OurServicesSection (): JSX.Element {
   return (
-    <section id='services' className='pt-24 pb-16 px-10 bg-gradient-to-t from-[#172618] via-[#3F4730] to-[#F2EDDF]'>
-      <div className='container mx-auto max-w-7xl'>
+    <section id='services' className='pt-24 pb-16 sm:px-10 bg-gradient-to-t from-[#172618] via-[#3F4730] to-[#F2EDDF]'>
+      <div className='container mx-auto max-w-7xl px-10'>
         {/* Section Title */}
         <h2 className='mb-20 text-center font-ivy text-3xl sm:text-4xl font-semibold text-dark-green'>OUR SERVICES</h2>
 

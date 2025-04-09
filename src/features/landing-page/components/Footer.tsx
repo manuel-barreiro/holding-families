@@ -12,7 +12,7 @@ export default function Footer (): React.ReactElement {
         {/* Explore Section */}
         <div className='flex flex-col justify-center items-center md:items-start order-2 md:order-1'>
           <h3 className='mb-4 text-2xl sm:text-3xl font-semibold'>EXPLORE</h3>
-          <div className='grid grid-cols-2 gap-x-3 gap-y-2 text-sm font-light items-center md:items-start'>
+          <div className='grid grid-cols-2 gap-x-3 gap-y-2 text-sm font-light items-center md:items-start text-center md:text-left'>
             <Link href='#mission' className='inline-block transition-opacity hover:opacity-80 hover:underline'>
               Mission
             </Link>
@@ -64,6 +64,9 @@ export default function Footer (): React.ReactElement {
             </div>
             <div className='inline-block transition-opacity hover:opacity-80 hover:underline'>
               @holdingfamilies
+            </div>
+            <div className='inline-block transition-opacity hover:opacity-80 hover:underline'>
+              Florida, USA
             </div>
           </div>
         </div>

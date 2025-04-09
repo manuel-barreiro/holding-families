@@ -7,7 +7,7 @@ export default function OurServicesFooter (): JSX.Element {
     <div className='flex flex-col lg:flex-row justify-evenly items-center gap-16 lg:gap-0 py-16'>
 
       <div className='flex flex-col gap-8'>
-        <h4 className='font-ivy text-3xl sm:text-4xl xl:text-5xl text-cream text-center lg:text-start font-semibold leading-normal'>
+        <h4 className='font-ivy text-3xl sm:text-4xl xl:text-5xl text-cream text-center lg:text-start font-semibold leading-normal '>
           Make parenting a<br />
           more{' '}
           <span className='italic'>
@@ -25,7 +25,7 @@ export default function OurServicesFooter (): JSX.Element {
 
       </div>
 
-      <div className='flex flex-col gap-8 items-start max-w-lg text-cream text-md sm:text-lg lg:text-xl text-left'>
+      <div className='flex flex-col gap-8 items-start max-w-lg text-cream text-md sm:text-lg lg:text-xl text-left px-10 sm:px-0'>
 
         <div className='flex items-start lg:items-center gap-6'>
           <Image src='/icons/iconito.svg' width={50} height={50} alt='icon' className='w-8 h-8 sm:w-10 sm:h-10 lg:w-[50px] lg:h-[50px]' />

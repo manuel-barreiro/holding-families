@@ -52,7 +52,7 @@ export default function Hero (): React.JSX.Element {
         <div className='flex flex-col items-center text-center max-w-5xl gap-10'>
           {/* Main heading with smoother animation */}
           <h1
-            className={`text-4xl font-bold text-white sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl ${
+            className={`text-5xl font-bold text-white lg:text-6xl xl:text-7xl ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-300 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
@@ -61,7 +61,7 @@ export default function Hero (): React.JSX.Element {
 
           {/* Subheading with smoother animation */}
           <h2
-            className={`text-md text-white sm:text-xl md:text-2xl  ${
+            className={`text-lg text-white sm:text-xl md:text-2xl  ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-500 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
@@ -71,7 +71,7 @@ export default function Hero (): React.JSX.Element {
           {/* Button with smoother animation */}
           <Link href='/#services'>
             <Button
-              className={`text-[#B2AC9D] font-bold text-sm sm:text-xl bg-white hover:bg-white/80 px-8 sm:px-12 md:px-20 py-4 sm:py-6 md:py-8 rounded-full cursor-pointer ${
+              className={`text-[#B2AC9D] font-bold text-md sm:text-xl bg-white hover:bg-white/80 px-8 sm:px-12 md:px-20 py-6 sm:py-8 md:py-8 rounded-full cursor-pointer ${
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-700 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
             >
