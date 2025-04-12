@@ -34,6 +34,7 @@ export const whoAreWeData = [
         <ul className='list-disc pl-4 mt-2'>
           <li>Licensed Psychologist (Universidad Barcelo, Buenos Aires) – Honors</li>
           <li>Certified Professional Life Coach (USA)</li>
+          <li>Master in Psychology</li>
         </ul>
       </div>
     )

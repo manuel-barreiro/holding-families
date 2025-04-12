@@ -7,8 +7,13 @@ export default function OurServicesSection (): JSX.Element {
   return (
     <section id='services' className='pt-24 pb-16 sm:px-10 bg-gradient-to-t from-[#172618] via-[#3F4730] to-[#F2EDDF]'>
       <div className='container mx-auto max-w-7xl px-10'>
+
         {/* Section Title */}
-        <h2 className='mb-20 text-center font-ivy text-3xl sm:text-4xl font-semibold text-dark-green'>OUR SERVICES</h2>
+        <h2 className='mb-5 text-center font-ivy text-3xl sm:text-4xl font-semibold text-dark-green'>OUR SERVICES</h2>
+
+        <p className='mb-16 text-center text-lg sm:text-xl font-light text-dark-green max-w-2xl mx-auto'>
+          All programs are available in English and Spanish, in-person and online / Todos los programas están disponibles en Inglés y Español, modalidad presencial u online
+        </p>
 
         {/* Cards Grid */}
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 mb-20'>
