@@ -88,5 +88,63 @@
         "item3": "Master in Psychology"
       }
     }
-  }  
+  },
+  "ScienceBacked": {
+    "titleLine1": "Backed by the",
+    "titleLine2": "Medical Community",
+    "expert1": {
+      "name": "Dr. Eduardo Bunge",
+      "title": "Co-Founder & CEO ParenteAI",
+      "description": "Professor, Department of Psychology Palo Alto University"
+    },
+    "expert2": {
+      "name": "Juan Pablo Dellarroquelle",
+      "title": "Co-Founder & CTO ParenteAI",
+      "description": "Technology executive, C-level advisor to technology companies"
+    },
+    "expert3": {
+      "name": "Dr. Antonio Hardan",
+      "title": "Co-Founder & CMA ParenteAI",
+      "description": "Division of Child and Adolescent Psychiatry, Stanford University"
+    }
+  },
+  "Contact": {
+    "title": "Need Personalized<br></br>Parenting Support?",
+    "description": "Connect with us to learn how AI-powered insights and expert strategies can help you navigate parenting with confidence.",
+    "form": {
+      "namePlaceholder": "Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone",
+      "messagePlaceholder": "Send a Message",
+      "buttonSend": "Send",
+      "buttonSending": "Sending message...",
+      "buttonSent": "Message received",
+      "validation": {
+        "nameRequired": "Please enter your name",
+        "lastNameRequired": "Please enter your last name",
+        "emailInvalid": "Please enter a valid email",
+        "phoneRequired": "Phone number is required",
+        "messageRequired": "Message is required"
+      },
+      "toastSuccessTitle": "We've received your inquiry",
+      "toastSuccessDescription": "We will contact you shortly",
+      "toastErrorTitle": "An error occurred",
+      "toastErrorDescription": "We did not receive your inquiry"
+    }
+  },
+    "Footer": {
+    "exploreTitle": "EXPLORE",
+    "contactTitle": "CONTACT",
+    "linkMission": "Mission",
+    "linkServices": "Services",
+    "linkOurBrand": "Our brand",
+    "linkWhoAreWe": "Who are we",
+    "linkParente": "Parente",
+    "linkContact": "Contact",
+    "contactInstagram": "@holdingfamilies",
+    "contactLocation": "Florida, USA",
+    "copyright": "® HOLDING FAMILIES.",
+    "designerCredit": "DESIGNED BY CS CREATIVE STUDIO"
+  }
 }

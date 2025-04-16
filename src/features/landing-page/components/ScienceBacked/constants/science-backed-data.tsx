@@ -1,32 +1,41 @@
-// science-backed-data.tsx
+import { ReactNode } from 'react'
+
+// Define the structure of an expert object
 export interface Expert {
   id: string
   name: string
   title: string
-  description: string
+  description: string // Keep as string if no rich text needed
   imageUrl: string
 }
 
-export const expertsData: Expert[] = [
+// Define a type for the translation function 't'
+interface TranslationFunction {
+  (key: string, values?: Record<string, any>): string
+  rich?: (key: string, values?: Record<string, (chunks: ReactNode) => ReactNode>) => ReactNode
+}
+
+// Export a function that takes 't' and returns the translated data array
+export const getTranslatedExpertsData = (t: TranslationFunction): Expert[] => [
   {
     id: 'eduardo-bunge',
-    name: 'Dr. Eduardo Bunge',
-    title: 'Co-Founder & CEO ParenteAI',
-    description: 'Professor, Department of Psychology Palo Alto University',
+    name: t('expert1.name'),
+    title: t('expert1.title'),
+    description: t('expert1.description'),
     imageUrl: '/images/eduardo-bunge.png'
   },
   {
     id: 'juan-pablo-dellarroquelle',
-    name: 'Juan Pablo Dellarroquelle',
-    title: 'Co-Founder & CTO ParenteAI',
-    description: 'Technology executive, C-level advisor to technology companies',
+    name: t('expert2.name'),
+    title: t('expert2.title'),
+    description: t('expert2.description'),
     imageUrl: '/images/juan-pablo-della.png'
   },
   {
     id: 'antonio-hardan',
-    name: 'Dr. Antonio Hardan',
-    title: 'Co-Founder & CMA ParenteAI',
-    description: 'Division of Child and Adolescent Psychiatry, Stanford University',
+    name: t('expert3.name'),
+    title: t('expert3.title'),
+    description: t('expert3.description'),
     imageUrl: '/images/antonio-hardan.png'
   }
 ]

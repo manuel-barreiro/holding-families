@@ -33,7 +33,7 @@ export default function ServiceCard ({
       </div>
 
       {/* Content */}
-      <div className='flex flex-1 flex-col gap-5 px-6 py-10 items-center text-center'>
+      <div className='flex flex-1 flex-col gap-5 px-3 py-10 items-center text-center'>
         <h3 className=' font-ivy text-2xl sm:text-3xl font-semibold text-dark-green uppercase'>{title}</h3>
         <p className=' text-[#555B45] font-bold'>{subtitle}</p>
 

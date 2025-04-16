@@ -88,5 +88,63 @@
         "item3": "Máster en Psicología"
       }
     }
+  },
+  "ScienceBacked": {
+    "titleLine1": "Respaldado por la",
+    "titleLine2": "Comunidad Médica",
+    "expert1": {
+      "name": "Dr. Eduardo Bunge",
+      "title": "Co-Fundador y CEO ParenteAI",
+      "description": "Profesor, Departamento de Psicología Universidad de Palo Alto"
+    },
+    "expert2": {
+      "name": "Juan Pablo Dellarroquelle",
+      "title": "Co-Fundador y CTO ParenteAI",
+      "description": "Ejecutivo de tecnología, asesor C-level para empresas tecnológicas"
+    },
+    "expert3": {
+      "name": "Dr. Antonio Hardan",
+      "title": "Co-Fundador y CMA ParenteAI",
+      "description": "División de Psiquiatría Infantil y Adolescente, Universidad de Stanford"
+    }
+  },
+  "Contact": {
+    "title": "¿Necesitas Apoyo<br></br>Personalizado en Crianza?",
+    "description": "Conéctate con nosotros para saber cómo las perspectivas impulsadas por IA y las estrategias expertas pueden ayudarte a navegar la crianza con confianza.",
+    "form": {
+      "namePlaceholder": "Nombre",
+      "lastNamePlaceholder": "Apellido",
+      "emailPlaceholder": "Correo Electrónico",
+      "phonePlaceholder": "Teléfono",
+      "messagePlaceholder": "Envía un Mensaje",
+      "buttonSend": "Enviar",
+      "buttonSending": "Enviando mensaje...",
+      "buttonSent": "Mensaje recibido",
+      "validation": {
+        "nameRequired": "Por favor ingresa tu nombre",
+        "lastNameRequired": "Por favor ingresa tu apellido",
+        "emailInvalid": "Por favor ingresa un correo válido",
+        "phoneRequired": "El número de teléfono es requerido",
+        "messageRequired": "El mensaje es requerido"
+      },
+      "toastSuccessTitle": "Hemos recibido tu consulta",
+      "toastSuccessDescription": "Nos pondremos en contacto",
+      "toastErrorTitle": "Ocurrió un error",
+      "toastErrorDescription": "No recibimos tu consulta"
+    }
+  },
+  "Footer": {
+    "exploreTitle": "EXPLORA",
+    "contactTitle": "CONTACTO",
+    "linkMission": "Misión",
+    "linkServices": "Servicios",
+    "linkOurBrand": "Nuestra marca",
+    "linkWhoAreWe": "Quiénes somos",
+    "linkParente": "Parente",
+    "linkContact": "Contacto",
+    "contactInstagram": "@holdingfamilies",
+    "contactLocation": "Florida, EE. UU.",
+    "copyright": "® HOLDING FAMILIES.",
+    "designerCredit": "DISEÑADO POR CS CREATIVE STUDIO"
   }
 }
