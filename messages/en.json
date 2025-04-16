@@ -1,0 +1,32 @@
+{
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "label": "Language"
+  },
+  "NavBar": {
+    "mission": "MISSION",
+    "ourBrand": "OUR BRAND",
+    "services": "SERVICES",
+    "whoAreWe": "WHO ARE WE",
+    "scienceBacked": "SCIENCE-BACKED",
+    "contact": "CONTACT",
+    "openMenu": "Open menu",
+    "closeMenu": "Dismiss main menu dialog"
+  },
+  "Hero": {
+    "title": "Empowering Parents",
+    "subtitle": "We hold you to hold your child - with heart, mind & AI",
+    "button": "JOIN STRATEGIC PARENTING"
+  },
+  "Mission": {
+    "statement": "We support parenting with evidence-based<br></br> strategies that optimize your children's emotional<br></br> management in everyday challenges"
+  },
+  "OurServicesSection": {
+    "title": "OUR SERVICES",
+    "availability": "All programs are available in English and Spanish, in-person and online"
+  },
+  "OurBrand": {
+     "title": "MEET HOLDING FAMILIES"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "label": "Idioma"
+  },
+  "Hero": {
+    "title": "Empoderando a los Padres",
+    "subtitle": "Te sostenemos para que sostengas a tu hijo - con corazón, mente e IA",
+    "button": "ÚNETE A LA CRIANZA ESTRATÉGICA"
+  },
+  "NavBar": {
+    "mission": "MISIÓN",
+    "ourBrand": "NUESTRA MARCA",
+    "services": "SERVICIOS",
+    "whoAreWe": "QUIÉNES SOMOS",
+    "scienceBacked": "BASE CIENTÍFICA",
+    "contact": "CONTACTO",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú principal"
+  },
+  "Mission": {
+    "statement": "Apoyamos la crianza con estrategias<br></br> basadas en evidencia que optimizan la gestión<br></br> emocional de tus hijos en los desafíos diarios"
+  },
+  "OurServicesSection": {
+    "title": "NUESTROS SERVICIOS",
+    "availability": "Todos los programas están disponibles en Inglés y Español, modalidad presencial u online"
+  },
+   "OurBrand": {
+     "title": "CONOCE HOLDING FAMILIES"
+  }
+}

@@ -3,9 +3,13 @@ import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
+import LocaleSwitcher from '@/components/locale/LocaleSwitcher'
 
 export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.ReactElement {
   const [open, setOpen] = useState(false)
+  const t = useTranslations('NavBar')
+  const tLocale = useTranslations('LocaleSwitcher')
 
   // Add useEffect to control body overflow
   useEffect(() => {
@@ -42,7 +46,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto duration-500 hover:brightness-200 focus-visible:outline-0 z-50 transition duration-[3s]'
               onClick={() => setOpen(true)}
             >
-              <span className='sr-only'>Open menu</span>
+              <span className='sr-only'>{t('openMenu')}</span>
               <span className='flex h-[36px] w-[36px] flex-col justify-center space-y-[11px]'>
                 <span className='h-[2px] w-full bg-background transition duration-150 ease-in-out' />
                 <span className='h-[2px] w-full bg-background transition duration-150 ease-in-out' />
@@ -55,7 +59,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto duration-500 hover:brightness-200 focus-visible:outline-0 z-50 transition duration-[3s]'
               onClick={() => setOpen(false)}
             >
-              <span className='sr-only'>Dismiss main menu dialog</span>
+              <span className='sr-only'>{t('closeMenu')}</span>
               <span className='flex h-[36px] w-[36px] flex-col justify-center space-y-[11px]'>
                 <span className='h-[2px] w-full translate-y-[7px] rotate-45 bg-background transition duration-150 ease-in-out' />
                 <span className='h-[2px] w-full translate-y-[-6px] -rotate-45 bg-background transition duration-150 ease-in-out' />
@@ -73,7 +77,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#mission' className='flex items-center gap-2'>
-                <span>MISSION</span>
+                <span>{t('mission')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>
@@ -85,7 +89,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
                 href='/#brand'
                 className='flex items-center gap-2'
               >
-                <span>OUR BRAND</span>
+                <span>{t('ourBrand')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>
@@ -94,7 +98,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#services' className='flex items-center gap-2'>
-                <span>SERVICES</span>
+                <span>{t('services')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>
@@ -103,7 +107,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#who-are-we' className='flex items-center gap-2'>
-                <span>WHO ARE WE</span>
+                <span>{t('whoAreWe')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>
@@ -112,7 +116,7 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#science-backed' className='flex items-center gap-2'>
-                <span>SCIENCE-BACKED</span>
+                <span>{t('scienceBacked')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
             </li>
@@ -121,9 +125,18 @@ export default function MobileNav ({ scrolled }: { scrolled: boolean }): React.R
               className='pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'
             >
               <Link href='/#contact' className='flex items-center gap-2'>
-                <span>CONTACT</span>
+                <span>{t('contact')}</span> {/* Use translation */}
                 <span className='mb-1'>{'>'}</span>
               </Link>
+            </li>
+            {/* Language Switcher Item */}
+            <li className='mt-4 flex items-center gap-2 pointer-events-auto cursor-pointer transition duration-500 hover:brightness-200 focus-visible:outline-0'>
+              {/* Label for the switcher */}
+              <span className='text-3xl sm:text-4xl'>{tLocale('label')}</span>
+              {/* Render the LocaleSwitcher component */}
+              <LocaleSwitcher />
+              {/* Optional: Add the '>' arrow if desired */}
+              {/* <span className='mb-1'>{'>'}</span> */}
             </li>
           </ul>
         </div>

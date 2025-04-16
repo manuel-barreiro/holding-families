@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Toaster } from '@/components/ui/sonner'
 import localFont from 'next/font/local'
 import './globals.css'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale } from 'next-intl/server'
 
 const standerd = localFont(
   {
@@ -95,21 +97,27 @@ export const viewport: Viewport = {
   width: 'device-width'
 }
 
-export default function RootLayout ({
+export default async function RootLayout ({
   children
 }: Readonly<{
   children: React.ReactNode
-}>): React.ReactElement {
+}>): Promise<React.ReactElement> {
+  const locale = await getLocale()
   return (
-    <html lang='es'>
+    <html lang={locale}>
       <head>
         <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
       </head>
       <body
         className={`${standerd.variable} ${ivy.variable} antialiased font-standerd bg-background`}
       >
-        {children}
-        <Toaster position='top-center' />
+        <NextIntlClientProvider>
+
+          {children}
+
+          <Toaster position='top-center' />
+
+        </NextIntlClientProvider>
       </body>
     </html>
   )
