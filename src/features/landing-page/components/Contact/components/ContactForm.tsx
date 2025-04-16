@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { useState } from 'react'
-import { CheckCircleIcon, CheckIcon, SendIcon, X } from 'lucide-react'
+import { CheckCircleIcon, CheckIcon, Loader2, SendIcon, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   Form,
@@ -17,7 +17,6 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { TextShimmerWave } from '@/components/motion-primitives/text-shimmer-wave'
 import { useTranslations } from 'next-intl'
 
 type TranslationFunction = (key: string, values?: Record<string, any>) => string
@@ -75,8 +74,8 @@ export default function ContactForm (): React.JSX.Element {
             <CheckIcon className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>{t('toastSuccessTitle')}</p>
-            <p className='text-sm text-muted-foreground'>{t('toastSuccessDescription')}</p>
+            <p className='font-medium text-sm'>{t('toastSuccessTitle')}</p>
+            <p className='text-xs text-muted-foreground'>{t('toastSuccessDescription')}</p>
           </div>
         </div>
       )
@@ -91,8 +90,8 @@ export default function ContactForm (): React.JSX.Element {
             <X className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>{t('toastErrorTitle')}</p>
-            <p className='text-sm text-muted-foreground'>{t('toastErrorDescription')}</p>
+            <p className='font-medium text-sm'>{t('toastErrorTitle')}</p>
+            <p className='text-xs text-muted-foreground'>{t('toastErrorDescription')}</p>
           </div>
         </div>
       )
@@ -225,17 +224,10 @@ export default function ContactForm (): React.JSX.Element {
               )
             : formStatus === 'loading'
               ? (
-                <TextShimmerWave
-                  className='[--base-color:#FDFBFA] [--base-gradient-color:#FAFAFA]'
-                  duration={1}
-                  spread={1}
-                  zDistance={1}
-                  scaleDistance={1.1}
-                  rotateYDistance={20}
-                >
-                  {/* Add fallback for potential undefined */}
+                <>
+                  <Loader2 className='mr-2 h-4 w-4 animate-spin' />
                   {t('buttonSending') ?? ''}
-                </TextShimmerWave>
+                </>
                 )
               : (
                 <span className='flex items-center gap-2'>
