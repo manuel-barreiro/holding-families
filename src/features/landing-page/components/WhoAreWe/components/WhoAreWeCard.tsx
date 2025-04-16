@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import React, { JSX } from 'react'
+import React, { JSX, ReactNode } from 'react'
 
 interface WhoAreWeCardProps {
   imageUrl: string
   name: string
-  description: string | JSX.Element
-  education: string | JSX.Element
+  description: ReactNode
+  education: ReactNode
 }
 
 export default function WhoAreWeCard ({ imageUrl, name, description, education }: WhoAreWeCardProps): JSX.Element {

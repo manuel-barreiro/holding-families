@@ -5,7 +5,7 @@ import { JSX } from 'react'
 
 export default function NotFound (): JSX.Element {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-cream p-4 text-center bg-background text-accent'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-cream p-4 text-center text-accent'>
       <div className='max-w-md'>
         <h1 className='text-6xl font-bold mb-4'>404</h1>
         <h2 className='text-2xl font-semibold mb-6'>Página no encontrada</h2>

@@ -4,10 +4,12 @@ import { useRef, useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export default function Hero (): React.JSX.Element {
   const sectionRef = useRef(null)
   const [isLoaded, setIsLoaded] = useState(false)
+  const t = useTranslations('Hero')
 
   // Wait for component to mount before showing animations
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-300 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            Empowering Parents
+            {t('title')}
           </h1>
 
           {/* Subheading with smoother animation */}
@@ -65,7 +67,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-500 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
           >
-            We hold you to hold your child - with heart, mind & AI
+            {t('subtitle')}
           </h2>
 
           {/* Button with smoother animation */}
@@ -75,7 +77,7 @@ export default function Hero (): React.JSX.Element {
               isLoaded ? 'animate-fade-up animate-duration-1000 animate-delay-700 animate-once animate-ease-in-out' : 'opacity-0'
             }`}
             >
-              JOIN STRATEGIC PARENTING
+              {t('button')}
             </Button>
           </Link>
 

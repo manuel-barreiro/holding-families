@@ -1,0 +1,150 @@
+{
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "label": "Idioma"
+  },
+  "Hero": {
+    "title": "Empoderando a los Padres",
+    "subtitle": "Te sostenemos para que sostengas a tu hijo - con corazón, mente e IA",
+    "button": "ÚNETE A LA CRIANZA ESTRATÉGICA"
+  },
+  "NavBar": {
+    "mission": "MISIÓN",
+    "ourBrand": "NUESTRA MARCA",
+    "services": "SERVICIOS",
+    "whoAreWe": "QUIÉNES SOMOS",
+    "scienceBacked": "BASE CIENTÍFICA",
+    "contact": "CONTACTO",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú principal"
+  },
+  "Mission": {
+    "statement": "Apoyamos la crianza con estrategias<br></br> basadas en evidencia que optimizan la gestión<br></br> emocional de tus hijos en los desafíos diarios"
+  },
+  "OurBrand": {
+    "title": "CONOCE HOLDING FAMILIES",
+    "paragraph1": "Nos dedicamos a transformar la crianza combinando <bold>ciencia, tecnología y calidez y experiencia humana. Brindamos apoyo integral a los padres</bold>, ofreciendo coaching experto y orientación <bold>para navegar los desafíos de criar a los hijos.</bold>",
+    "paragraph2": "Nuestro objetivo es <bold>hacer la crianza más estratégica, menos estresante y más empoderadora</bold> —fortaleciendo los lazos familiares y fomentando el bienestar emocional desde la primera infancia hasta la adolescencia.",
+    "paragraph3": "Uno de nuestros programas principales es <bold>Parente.AI, una solución impulsada por IA</bold> diseñada para ayudar a los padres de niños de 2 a 12 años a <bold>manejar desafíos de comportamiento, mejorar la comunicación y crear un entorno hogareño equilibrado</bold> y conectado. Esta plataforma 24/7 proporciona estrategias basadas en evidencia para optimizar la gestión emocional tanto para niños como para padres, asegurando el éxito a largo plazo."
+  },
+  "OurServicesSection": {
+    "title": "NUESTROS SERVICIOS",
+    "serviceCardButton": "Compra Ahora",
+    "service1": {
+      "title": "HOLD INDIVIDUAL",
+      "subtitle": "Coaching Personalizado para Padres",
+      "description": "Un espacio privado donde te sostenemos con <bold>empatía y herramientas basadas en evidencia</bold>, ayudándote a navegar desafíos con <bold>claridad y confianza</bold> — desde rabietas hasta conversaciones difíciles."
+    },
+    "service2": {
+      "title": "HOLD JUNTOS",
+      "subtitle": "Coaching Grupal para Padres",
+      "description": "Conecta con otros padres en un <bold>ambiente de apoyo</bold>. Guiado por un coach, aprenderás, compartirás y crecerás junto a otros — porque <bold>no tienes que hacer esto solo</bold>."
+    },
+    "service3": {
+      "title": "HOLD DESDE EL INICIO",
+      "subtitle": "Coaching para Futuros Padres y Primer Año del Bebé",
+      "description": "Desde el embarazo hasta el posparto, te apoyamos en la construcción de <bold>vínculos seguros y rutinas saludables</bold> desde el primer día. <bold>La calma empieza contigo</bold> — y estamos aquí para guiarte."
+    },
+    "service4": {
+      "title": "HOLD CON IA",
+      "subtitle": "Coaching Potenciado por ParenteAI",
+      "description": "Nos hemos asociado con ParenteAI para ofrecer un <bold>modelo híbrido de apoyo</bold> que combina <bold>orientación IA 24/7 con el poder del coaching en vivo</bold>.",
+      "extraContent": "+ Seguir Leyendo"
+    },
+    "service5": {
+      "title": "HOLD EL FUTURO",
+      "subtitle": "Programas de Prevención y Comportamiento Positivo para Adolescentes",
+      "description": "<bold>Empodera a tu hijo temprano</bold>. Este programa equipa a los padres para prevenir problemas de comportamiento y construir <bold>resiliencia emocional duradera</bold>."
+    },
+    "footer": {
+      "heading": "Haz de la crianza un<br></br> viaje más <italic>estratégico, <br></br> consciente, y gratificante</italic>",
+      "button": "Únete Ahora",
+      "benefit1": "<bold>Fortalece los Lazos Familiares -</bold> Fomenta conexiones más profundas entre padres e hijos a través de la comprensión y el apoyo emocional.",
+      "benefit2": "<bold>Empodera a los Padres con Herramientas y Conocimiento 24/7 -</bold> Proporciona estrategias prácticas y conocimientos respaldados por expertos para navegar los desafíos de comportamiento con confianza.",
+      "benefit3": "<bold>Crea un Hogar Equilibrado y Sin Estrés -</bold> Ayuda a las familias a gestionar las rutinas diarias, reducir el estrés y promover un ambiente hogareño positivo."
+    }
+  },
+  "WhoAreWe": {
+    "title": "DETRÁS DE <br></br> HOLDING FAMILIES",
+    "person1": {
+      "name": "Lic. Mariana Kerestezachi",
+      "description": "Co-Fundadora y Líder del Programa Grupal HOLDING FAMILIES. <bold>Psicóloga Licenciada de Argentina</bold>, ahora <bold>residente en EE. UU.</bold>, con <bold>más de 17 años de experiencia</bold> trabajando con <bold>familias, niños con autismo y desafíos conductuales.</bold> Fundó y dirigió un departamento hospitalario especializado en diagnóstico y tratamiento para niños con discapacidades y cofundó CPI, una clínica privada de terapia familiar e infantil. Trabajó en Cayuga Centers Miami Florida (organización sin fines de lucro de NY) durante dos años y medio, liderando talleres para padres y coaching grupal.",
+      "education": {
+        "heading": "Educación y Certificaciones:",
+        "item1": "Licenciada en Psicología (Universidad de Buenos Aires, Argentina) - Honores",
+        "item2": "Máster en Psicología Clínica (Universidad de Buenos Aires, Argentina)",
+        "item3": "Certificada en ADOS, ADI-R y Nutrición Natural (IATENA)",
+        "item4": "Bachelor en Psicología (EE. UU.), Coach de Vida Certificada, Certificada en Incredible Years"
+      }
+    },
+    "person2": {
+      "name": "Lic. Paula Coloma",
+      "description": "Co-Fundadora y Propietaria HOLDING FAMILIES. <bold>Psicóloga Licenciada de Argentina, especializada en psicología infantil y adolescente, y Coach de Vida Certificada en EE. UU.</bold> Con <bold>más de 10 años de experiencia</bold>, ha trabajado en <bold>salud pública y privada y liderado equipos interdisciplinarios</bold>. Fundó Elet Medical Center y tiene experiencia en gestión sanitaria, incluyendo el lanzamiento de un servicio de emergencia privado y la dirección de un proyecto estratégico de salud en las Bahamas. Fundadora de Medkit Health, una empresa de salud que integra el bienestar físico y emocional a través de un enfoque holístico.",
+      "education": {
+        "heading": "Educación y Certificaciones:",
+        "item1": "Licenciada en Psicología (Universidad Barcelo, Buenos Aires) – Honores",
+        "item2": "Coach de Vida Profesional Certificada (EE. UU.)",
+        "item3": "Máster en Psicología"
+      }
+    }
+  },
+  "ScienceBacked": {
+    "titleLine1": "Respaldado por la",
+    "titleLine2": "Comunidad Médica",
+    "expert1": {
+      "name": "Dr. Eduardo Bunge",
+      "title": "Co-Fundador y CEO ParenteAI",
+      "description": "Profesor, Departamento de Psicología Universidad de Palo Alto"
+    },
+    "expert2": {
+      "name": "Juan Pablo Dellarroquelle",
+      "title": "Co-Fundador y CTO ParenteAI",
+      "description": "Ejecutivo de tecnología, asesor C-level para empresas tecnológicas"
+    },
+    "expert3": {
+      "name": "Dr. Antonio Hardan",
+      "title": "Co-Fundador y CMA ParenteAI",
+      "description": "División de Psiquiatría Infantil y Adolescente, Universidad de Stanford"
+    }
+  },
+  "Contact": {
+    "title": "¿Necesitas Apoyo<br></br>Personalizado en Crianza?",
+    "description": "Conéctate con nosotros para saber cómo las perspectivas impulsadas por IA y las estrategias expertas pueden ayudarte a navegar la crianza con confianza.",
+    "form": {
+      "namePlaceholder": "Nombre",
+      "lastNamePlaceholder": "Apellido",
+      "emailPlaceholder": "Correo Electrónico",
+      "phonePlaceholder": "Teléfono",
+      "messagePlaceholder": "Envía un Mensaje",
+      "buttonSend": "Enviar",
+      "buttonSending": "Enviando mensaje...",
+      "buttonSent": "Mensaje recibido",
+      "validation": {
+        "nameRequired": "Por favor ingresa tu nombre",
+        "lastNameRequired": "Por favor ingresa tu apellido",
+        "emailInvalid": "Por favor ingresa un correo válido",
+        "phoneRequired": "El número de teléfono es requerido",
+        "messageRequired": "El mensaje es requerido"
+      },
+      "toastSuccessTitle": "Hemos recibido tu consulta",
+      "toastSuccessDescription": "Nos pondremos en contacto",
+      "toastErrorTitle": "Ocurrió un error",
+      "toastErrorDescription": "No recibimos tu consulta"
+    }
+  },
+  "Footer": {
+    "exploreTitle": "EXPLORA",
+    "contactTitle": "CONTACTO",
+    "linkMission": "Misión",
+    "linkServices": "Servicios",
+    "linkOurBrand": "Nuestra marca",
+    "linkWhoAreWe": "Quiénes somos",
+    "linkParente": "Parente",
+    "linkContact": "Contacto",
+    "contactInstagram": "@holdingfamilies",
+    "contactLocation": "Florida, EE. UU.",
+    "copyright": "® HOLDING FAMILIES.",
+    "designerCredit": "DISEÑADO POR CS CREATIVE STUDIO"
+  }
+}

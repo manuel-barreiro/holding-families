@@ -1,20 +1,12 @@
 'use client'
 
-import {
-  toast
-} from 'sonner'
-import {
-  useForm
-} from 'react-hook-form'
-import {
-  zodResolver
-} from '@hookform/resolvers/zod'
+import { toast } from 'sonner'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { useState } from 'react'
-import { CheckCircleIcon, CheckIcon, SendIcon, X } from 'lucide-react'
-import {
-  Button
-} from '@/components/ui/button'
+import { CheckCircleIcon, CheckIcon, Loader2, SendIcon, X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import {
   Form,
   FormControl,
@@ -23,23 +15,34 @@ import {
   FormLabel,
   FormMessage
 } from '@/components/ui/form'
-import {
-  Input
-} from '@/components/ui/input'
-import {
-  Textarea
-} from '@/components/ui/textarea'
-import { TextShimmerWave } from '@/components/motion-primitives/text-shimmer-wave'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { useTranslations } from 'next-intl'
 
-const formSchema = z.object({
-  name: z.string().min(1, 'Please enter your name').max(35),
-  lastName: z.string().min(1, 'Please enter your last name').max(55),
-  email: z.string().email('Please enter a valid email'),
-  phone: z.string().min(1, 'Phone number is required'),
-  message: z.string().min(1, 'Message is required').max(500)
+type TranslationFunction = (key: string, values?: Record<string, any>) => string
+
+// Define the expected shape of the schema for the return type
+type ContactFormSchemaType = z.ZodObject<{
+  name: z.ZodString
+  lastName: z.ZodString
+  email: z.ZodString
+  phone: z.ZodString
+  message: z.ZodString
+}>
+
+// Update schema to accept t function and add return type
+const createFormSchema = (t: TranslationFunction): ContactFormSchemaType => z.object({
+  name: z.string().min(1, t('validation.nameRequired')).max(35),
+  lastName: z.string().min(1, t('validation.lastNameRequired')).max(55),
+  email: z.string().email(t('validation.emailInvalid')),
+  phone: z.string().min(1, t('validation.phoneRequired')),
+  message: z.string().min(1, t('validation.messageRequired')).max(500)
 })
 
 export default function ContactForm (): React.JSX.Element {
+  const t = useTranslations('Contact.form')
+  const formSchema = createFormSchema(t)
+
   const [formStatus, setFormStatus] = useState<'initial' | 'loading' | 'submitted'>('initial')
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -57,33 +60,26 @@ export default function ContactForm (): React.JSX.Element {
     try {
       setFormStatus('loading')
 
-      // Send form data to API endpoint
       const response = await fetch('/api/send-email', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values)
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to submit form')
-      }
+      if (!response.ok) throw new Error('Failed to submit form')
 
-      // Show custom toast with CheckIcon
       toast(
         <div className='flex items-start'>
           <div className='mr-3 rounded-full bg-accent p-2'>
             <CheckIcon className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>We've received your inquiry</p>
-            <p className='text-sm text-muted-foreground'>We will contact you shortly</p>
+            <p className='font-medium text-sm'>{t('toastSuccessTitle')}</p>
+            <p className='text-xs text-muted-foreground'>{t('toastSuccessDescription')}</p>
           </div>
         </div>
       )
 
-      // Reset form and update status
       form.reset()
       setFormStatus('submitted')
     } catch (error) {
@@ -94,8 +90,8 @@ export default function ContactForm (): React.JSX.Element {
             <X className='h-4 w-4 text-background' />
           </div>
           <div>
-            <p className='font-medium'>An error occurred</p>
-            <p className='text-sm text-muted-foreground'>We did not receive your inquiry</p>
+            <p className='font-medium text-sm'>{t('toastErrorTitle')}</p>
+            <p className='text-xs text-muted-foreground'>{t('toastErrorDescription')}</p>
           </div>
         </div>
       )
@@ -107,6 +103,7 @@ export default function ContactForm (): React.JSX.Element {
     <Form {...form}>
       <form onSubmit={(e) => { void form.handleSubmit(onSubmit)(e) }} className='space-y-3 w-full'>
 
+        {/* ... FormFields for name, lastName, email, phone, message ... */}
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
           <div className='col-span-1'>
             <FormField
@@ -114,10 +111,10 @@ export default function ContactForm (): React.JSX.Element {
               name='name'
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className='sr-only'>Name</FormLabel>
+                  <FormLabel className='sr-only'>{t('namePlaceholder')}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder='Name'
+                      placeholder={t('namePlaceholder')}
                       type='text'
                       className='bg-white text-accent'
                       {...field}
@@ -135,10 +132,10 @@ export default function ContactForm (): React.JSX.Element {
               name='lastName'
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className='sr-only'>Last Name</FormLabel>
+                  <FormLabel className='sr-only'>{t('lastNamePlaceholder')}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder='Last Name'
+                      placeholder={t('lastNamePlaceholder')}
                       type='text'
                       className='bg-white text-accent'
                       {...field}
@@ -158,10 +155,10 @@ export default function ContactForm (): React.JSX.Element {
               name='email'
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className='sr-only'>Email</FormLabel>
+                  <FormLabel className='sr-only'>{t('emailPlaceholder')}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder='Email'
+                      placeholder={t('emailPlaceholder')}
                       type='email'
                       className='bg-white text-accent'
                       {...field}
@@ -179,10 +176,10 @@ export default function ContactForm (): React.JSX.Element {
               name='phone'
               render={({ field }) => (
                 <FormItem className='flex flex-col items-start'>
-                  <FormLabel className='sr-only'>Phone</FormLabel>
+                  <FormLabel className='sr-only'>{t('phonePlaceholder')}</FormLabel>
                   <FormControl className='w-full'>
                     <Input
-                      placeholder='Phone'
+                      placeholder={t('phonePlaceholder')}
                       type='tel'
                       className='bg-white text-accent'
                       {...field}
@@ -200,10 +197,10 @@ export default function ContactForm (): React.JSX.Element {
           name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='sr-only'>Send a Message</FormLabel>
+              <FormLabel className='sr-only'>{t('messagePlaceholder')}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder='Send a Message'
+                  placeholder={t('messagePlaceholder')}
                   className='resize-none bg-white text-accent min-h-32'
                   {...field}
                 />
@@ -212,6 +209,7 @@ export default function ContactForm (): React.JSX.Element {
             </FormItem>
           )}
         />
+
         <Button
           type='submit'
           disabled={formStatus !== 'initial'}
@@ -221,26 +219,20 @@ export default function ContactForm (): React.JSX.Element {
             ? (
               <span className='flex items-center gap-2'>
                 <SendIcon size={18} />
-                Send
+                {t('buttonSend')}
               </span>
               )
             : formStatus === 'loading'
               ? (
-                <TextShimmerWave
-                  className='[--base-color:#FDFBFA] [--base-gradient-color:#FAFAFA]'
-                  duration={1}
-                  spread={1}
-                  zDistance={1}
-                  scaleDistance={1.1}
-                  rotateYDistance={20}
-                >
-                  Sending message...
-                </TextShimmerWave>
+                <>
+                  <Loader2 className='mr-2 h-4 w-4 animate-spin' />
+                  {t('buttonSending') ?? ''}
+                </>
                 )
               : (
                 <span className='flex items-center gap-2'>
                   <CheckCircleIcon size={18} />
-                  Message received
+                  {t('buttonSent')}
                 </span>
                 )}
         </Button>

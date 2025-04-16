@@ -1,9 +1,10 @@
 import React, { JSX } from 'react'
+import { useTranslations } from 'next-intl'
 
 interface ServiceCardProps {
   title: string
   subtitle: string
-  description: string | JSX.Element
+  description: React.ReactNode
   buttonLink?: string
   imageUrl: string
   extraContent?: string | JSX.Element
@@ -19,6 +20,7 @@ export default function ServiceCard ({
   imageClassname, // Default value properly defined
   extraContent
 }: ServiceCardProps): JSX.Element {
+  const t = useTranslations('OurServicesSection')
   return (
     <div className='flex flex-col h-full rounded-4xl bg-[#DFD9C5] w-full relative pb-10'>
       {/* Image */}
@@ -31,7 +33,7 @@ export default function ServiceCard ({
       </div>
 
       {/* Content */}
-      <div className='flex flex-1 flex-col gap-5 px-6 py-10 items-center text-center'>
+      <div className='flex flex-1 flex-col gap-5 px-3 py-10 items-center text-center'>
         <h3 className=' font-ivy text-2xl sm:text-3xl font-semibold text-dark-green uppercase'>{title}</h3>
         <p className=' text-[#555B45] font-bold'>{subtitle}</p>
 
@@ -65,7 +67,7 @@ export default function ServiceCard ({
           // target='_blank'
           className='inline-block rounded-full bg-[#626752] hover:bg-[#71775d] px-8 py-4 text-center text-cream hover:shadow-2xl text-xl font-semibold transition-all ease-in-out duration-300' rel='noreferrer'
         >
-          Shop Now
+          {t('serviceCardButton')}
         </a>
       </div>
     </div>
